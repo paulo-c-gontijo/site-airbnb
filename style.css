@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+:root{
+    --cor-destaque: rgb(255, 90, 95);
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    width: 100vw;
+    height: 70px;
+    margin: 0px;
+    position: relative;
+}
+header > h1 {
+    position: absolute;
+    padding-left: 80px;
+    font-size: 1.5em;
+    margin-top: 15px;
+    color: var(--cor-destaque);
+}
+header > nav{
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+header > nav > a {
+    color: black;
+    margin-left: 10px;
+    font-weight: bolder 40px;
+    font-size: 0.8em;
+}
+div.form-img {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+div.form-img > section {
+    height: 400px;
+    margin-top: 55px;
+    margin-left: 70px;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+}
+div.form-img > img{
+    position: absolute;
+    left: 25%;
+    z-index: 1;
+    border-radius: 10px;
+}
+section {
+    width: 360px;
+    padding: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+section > h2 {
+    font-size: 1.8em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+section > p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bolder 15px;
+    color: gray;
+}
+section > form {
+    margin: auto;
+    border-collapse: collapse;
+}
+section.formulario > input{
+    width: 100%;
+    background-color: var(--cor-destaque);
+    border: none;
+    border-radius: 6px;
+    height: 45px;
+    font-weight: bolder 20px;
+    color: white;
+    font-size: 1em;
+    transition: all 0.6s;
+}
+section.formulario > input:hover{
+    background-color: rgb(252, 59, 66);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.296);
+}
+.input-container {
+    position: relative;
+    width: 100%; 
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+
+.input-container label {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 12px;
+    color: #333; 
+    background-color: white;
+    padding-left: 5px;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+
+
+.input-container input {
+    width: 100%;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    padding-top: 30px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 100%;
+}
+.mesclagem {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+div.mesclagem {
+    border-radius: 10px;
+}
+article {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+    padding-left: 0px;
+}
+article > div#item1 {
+    margin-left: 38px;
+}
+article > div > img {
+    text-align: start;
+    width: 30px;
+    height: 30px;
+}
+
+div.box-info {
+    padding-top: 600px;
+    margin: 40px;
+    margin-right: 108px;
+}
+article > div > h3 {
+    font-weight: bolder 10px;
+    font-size: 1.2em;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+}
+article > div > p {
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 25px;
+    font-size: 1.1em;
+}
+
+body > h2 {
+    padding: 50px 0px 0px 108px;
+    font-size: 1.8em;
+    font-weight: 10px;
+    margin-bottom: 0px;
+}
+body > p {
+    padding-left: 108px;
+    padding-top: 10px;
+    font-size: 1.2em;
+    margin: 0px;
+}
+section.imagens-cozinha{
+    box-shadow: none;
+    padding-left: 0px;
+    margin-left: 108px;
+    margin-right: 108px;
+    display: inline-flex;
+    flex-direction: row;
+}
+section.imagens-cozinha > a > div > img{
+    width: 270px;
+    height: 240px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+}
+section.imagens-cozinha > a >div {
+    width: 250px;
+    margin-right: 65px;
+}
+section.imagens-cozinha > a > div > h4 {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+section.imagens-cozinha > a > div > p{
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    padding-right: 5px;
+    margin: 5px;
+    margin-left: 0px;
+    font-size: 0.9em;
+}
+section.imagens-cozinha > a {
+    text-decoration: none;
+    color: black;
+}
+section.imagens-cozinha > input {
+    display: block;
+}
+section.imagens-cozinha > a > div.preferido-hospedes > h5 {
+    position: absolute;
+    transform: translate(-20px, -370px);
+    padding-left: 20px;
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 30px;
+    margin-left: 35px;
+    font-weight: bolder 10px;
+}
+
+section#botao-cozinha {
+    box-shadow: none;
+    padding: 0px;
+    margin-left: 108px;
+    background-color: white;
+    width: 200px;
+}
+section#botao-cozinha > input {
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    font-weight: bold 10px;
+    font-size: 1em;
+    transition: all 0.25s;
+    margin-bottom: 80px;
+}
+section#botao-cozinha > input:hover {
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.307);
+    color: white;
+    cursor: pointer;
+}
+aside {
+    background-color: rgb(249, 249, 249);
+    padding-left: 108px;
+    padding-right: 108px;
+    margin: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+aside > h3 {
+    font-weight: 10px;
+    font-size: 1.9em;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+aside > p {
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 1.2em;
+}
+div.box-escolha {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+div.box-escolha > div {
+    flex: 1 1 20%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid lightgray;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 16px;
+    width: 418px;
+    height: 44px;
+    background-color: white;
+    position: relative;
+    transition: all 0.3s;
+}
+div.box-escolha > div > img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(0, -50%);
+}
+div.box-escolha > div > p {
+    position: absolute;
+    left: 63%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+div.box-escolha > div > p > span {
+    margin-left: 10px;
+    font-weight: bolder 10px;
+}
+div.box-escolha > div:hover {
+    background-color: rgb(165, 164, 164);
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.405);
+}
+footer {
+    background-color: rgb(249, 249, 249);
+    color: black;
+    border-top: 1px solid lightgray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+}
+footer > span:hover {
+    font-weight: bolder 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
